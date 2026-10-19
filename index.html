@@ -2094,7 +2094,19 @@
                     video.pause();
                     video.currentTime = 0;
                 }
+                if (window.location.hash === '#modalVehicAlertDemo') {
+                    history.replaceState(null, null, window.location.pathname + window.location.search);
+                }
             });
+            function checkHashAndOpenModal() {
+                if (window.location.hash === '#modalVehicAlertDemo') {
+                    setTimeout(function () {
+                        $('#modalVehicAlertDemo').modal('show');
+                    }, 350);
+                }
+            }
+            checkHashAndOpenModal();
+            $(window).on('hashchange', checkHashAndOpenModal);
         });
     </script>
 </body>
