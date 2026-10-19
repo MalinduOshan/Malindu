@@ -29,6 +29,70 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .phone-mockup-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px 0;
+        }
+        .phone-mockup-frame {
+            position: relative;
+            width: 290px;
+            max-width: 80vw;
+            background: #020617;
+            border-radius: 42px;
+            padding: 10px;
+            box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 0 3px #1e293b, 0 0 0 5px #0f172a;
+        }
+        .phone-mockup-notch {
+            position: absolute;
+            top: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 16px;
+            background: #000;
+            border-radius: 12px;
+            z-index: 10;
+            pointer-events: none;
+        }
+        .phone-mockup-screen {
+            position: relative;
+            border-radius: 32px;
+            overflow: hidden;
+            background: #000;
+            aspect-ratio: 9 / 19.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .phone-mockup-screen video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 32px;
+            display: block;
+        }
+        @media (max-width: 576px) {
+            .phone-mockup-frame {
+                width: 240px;
+                border-radius: 34px;
+                padding: 8px;
+            }
+            .phone-mockup-screen {
+                border-radius: 26px;
+            }
+            .phone-mockup-screen video {
+                border-radius: 26px;
+            }
+            .phone-mockup-notch {
+                width: 65px;
+                height: 13px;
+                top: 13px;
+            }
+        }
+    </style>
 </head>
 
 <body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
@@ -438,6 +502,43 @@
                 </div>
 
                 <div class="row row--25 mt--10 mt_md--10 mt_sm--10">
+                    <!-- Start Single Portfolio: VehicAlert -->
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--40">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#modalVehicAlertDemo" style="cursor: pointer;">
+                            <div class="inner">
+                                <div class="thumbnail" style="overflow: hidden; height: 200px; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0A192F 0%, #1D4ED8 100%); position: relative;">
+                                    <a href="javascript:void(0)">
+                                        <img src="assets/images/portfolio/vehicalert.png"
+                                            style="height: 120px; object-fit: contain;" alt="VehicAlert">
+                                    </a>
+                                    <span style="position: absolute; bottom: 12px; right: 12px; background: rgba(0,0,0,0.65); backdrop-filter: blur(8px); color: #fff; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 700; display: flex; align-items: center; gap: 4px; border: 1px solid rgba(255,255,255,0.15);">
+                                        <span>🎬 Watch Demo</span>
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <a href="javascript:void(0)">VehicAlert</a>
+                                        </div>
+                                        <div class="meta">
+                                            <span><a href="javascript:void(0)"><i class="feather-heart"></i></a>
+                                                28</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="javascript:void(0)">Offline Vehicle Management & Document Expiry Reminder Mobile App <i
+                                                class="feather-arrow-up-right"></i></a></h4>
+                                    <div style="margin-top: 14px;">
+                                        <span class="rn-btn" style="padding: 6px 14px; font-size: 12px; border-radius: 6px; display: inline-flex; align-items: center; gap: 6px; cursor: pointer;">
+                                            <span>Watch Demo 🎬</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Portfolio -->
+
                     <!-- Start Single Portfolio: PhishGuard -->
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--40">
@@ -1877,6 +1978,64 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal VehicAlert Demo -->
+            <div class="modal fade" id="modalVehicAlertDemo" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 900px;">
+                    <div class="modal-content" style="background: #191b1f; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); overflow: hidden;">
+                        <div class="modal-header" style="border-bottom: 1px solid rgba(255,255,255,0.08); padding: 18px 24px; display: flex; align-items: center; justify-content: space-between;">
+                            <div style="display: flex; align-items: center; gap: 10px;">
+                                <span style="font-size: 20px;">🚗</span>
+                                <h5 style="margin: 0; font-size: 18px; font-weight: 700; color: #fff;">VehicAlert — App Walkthrough Demo</h5>
+                            </div>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="color: #fff; opacity: 0.8; font-size: 24px; padding: 0; margin: 0; background: none; border: none; cursor: pointer;">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" style="padding: 24px;">
+                            <div class="row align-items-center">
+                                <div class="col-lg-5 col-md-5 text-center">
+                                    <div class="phone-mockup-wrapper">
+                                        <div class="phone-mockup-frame">
+                                            <div class="phone-mockup-notch"></div>
+                                            <div class="phone-mockup-screen">
+                                                <video id="vehicalertDemoVideo" controls playsinline preload="auto">
+                                                    <source src="assets/vehicalert-demo.mp4" type="video/mp4">
+                                                    Your browser does not support the video tag.
+                                                </video>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-7 col-md-7">
+                                    <div class="text-content" style="padding: 10px 15px;">
+                                        <span style="display: inline-block; padding: 4px 12px; background: rgba(29, 78, 216, 0.2); color: #60a5fa; border-radius: 6px; font-size: 12px; font-weight: 700; margin-bottom: 14px; border: 1px solid rgba(96, 165, 250, 0.3);">
+                                            MOBILE APPLICATION · OFFLINE-FIRST
+                                        </span>
+                                        <h3 style="color: #fff; font-size: 24px; font-weight: 800; margin-bottom: 12px;">VehicAlert</h3>
+                                        <p style="color: #c4cfde; font-size: 14px; line-height: 1.7; margin-bottom: 18px;">
+                                            VehicAlert is a production-grade, 100% offline-first vehicle management and document expiry reminder mobile application built with React Native and Expo Router. It tracks revenue licences, insurance policies, emission certificates, and maintenance schedules with automated local push notifications and encrypted local storage.
+                                        </p>
+                                        <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px;">
+                                            <span style="background: rgba(255,255,255,0.06); color: #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600;">React Native</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600;">Expo Router</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600;">TypeScript</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600;">Hermes Engine</span>
+                                            <span style="background: rgba(255,255,255,0.06); color: #cbd5e1; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600;">Local Notifications</span>
+                                        </div>
+                                        <div class="button-group mt--20" style="display: flex; gap: 12px; flex-wrap: wrap;">
+                                            <a href="https://github.com/MalinduOshan/VehicAlert" target="_blank" class="rn-btn">
+                                                <span>VIEW ON GITHUB</span>
+                                                <i data-feather="chevron-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- End Modal Portfolio area -->
             <!-- Back to top Start -->
             <div class="backto-top">
@@ -1921,6 +2080,23 @@
     <script src="assets/js/vendor/particles.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#modalVehicAlertDemo').on('shown.bs.modal', function () {
+                var video = document.getElementById('vehicalertDemoVideo');
+                if (video) {
+                    video.play().catch(function () {});
+                }
+            });
+            $('#modalVehicAlertDemo').on('hidden.bs.modal', function () {
+                var video = document.getElementById('vehicalertDemoVideo');
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

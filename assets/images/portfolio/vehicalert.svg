@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="240" viewBox="0 0 760 240" role="img"><title>02 — VehicAlert</title>
+<defs><linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111f"/><stop offset="1" stop-color="#1b2544"/></linearGradient><linearGradient id="c"><stop stop-color="#34d399"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+<rect width="760" height="240" rx="18" fill="url(#b)"/><rect x="1" y="1" width="758" height="238" rx="17" fill="none" stroke="#34d399" stroke-opacity=".65"/>
+<text x="30" y="42" fill="#34d399" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="3">02 / MOBILE PRODUCTIVITY</text>
+<text x="30" y="95" fill="#fff" font-family="Arial,sans-serif" font-size="34" font-weight="700">VehicAlert</text>
+<text x="30" y="132" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="17">Vehicle document expiry reminders</text>
+<g transform="translate(570 55)" fill="none" stroke="url(#c)" stroke-width="3"><rect width="120" height="120" rx="22"/><path d="M26 42l-14 18 14 18M94 42l14 18-14 18M70 28L48 92"/><circle cx="60" cy="60" r="43" stroke-opacity=".35"><animateTransform attributeName="transform" type="rotate" from="0 60 60" to="360 60 60" dur="18s" repeatCount="indefinite"/></circle></g>
+<path d="M30 195H730" stroke="#34d399" stroke-opacity=".35"/><text x="30" y="220" fill="#94a3b8" font-family="Arial,sans-serif" font-size="13">MALINDU OSHAN • PROJECT SHOWCASE</text></svg>
